@@ -132,9 +132,9 @@ input[type=submit] {
   cursor: pointer;
 }
 /* =========================================================
-   orlovmax.com less elements library v1.0
+   orlovmax.com less elements library v1.1
    ===================================
-   More info at http://orlovmax.com/lab/lesselements
+   More info at https://github.com/orlovmax/less-elements
    ========================================================= */
 .hidentext {
   text-indent: 100%;
@@ -151,6 +151,7 @@ input[type=submit] {
 }
 /* =========================================================
    Fluid grid system for less css
+   More at https://github.com/orlovmax/fluid-less-grid
    ========================================================= */
 /* Clearfix hack */
 .clear {
@@ -219,19 +220,22 @@ nav a {
   display: inline-block;
   width: 100%;
   max-width: 400px;
+  vertical-align: top;
 }
 .subscribe-form input[type=text] {
-  width: 68%;
+  width: 65%;
   padding: 0 10px;
   border: none;
   font-size: 16px;
+  vertical-align: top;
 }
 .subscribe-form input[type=submit] {
-  width: 32%;
+  width: 30%;
   border: none;
   font-size: 16px;
   font-weight: bold;
   margin-left: -5px;
+  vertical-align: top;
 }
 /* =========================================================
    Custom styles
@@ -287,6 +291,7 @@ header {
 .promo_title {
   text-transform: uppercase;
   color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 .promo_slogan {
   margin-top: 15px;
@@ -312,7 +317,7 @@ header {
   background: -ms-linear-gradient(bottom, #f0f0f0, #ffffff);
   background: -o-linear-gradient(bottom, #f0f0f0, #ffffff);
   background: linear-gradient(bottom, #f0f0f0, #ffffff);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f0f0f0, endColorstr=#ffffff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f0f0f0', GradientType=0);
   -webkit-border-radius: 28px;
   -moz-border-radius: 28px;
   border-radius: 28px;
@@ -344,6 +349,7 @@ header {
   font-size: 40px;
   font-weight: bold;
   color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 .services_text {
   margin-top: 10px;
@@ -453,7 +459,7 @@ header {
 }
 .event {
   float: left;
-  width: 25.333333333333336%;
+  width: 25.33333333%;
   margin: 0% 4%;
 }
 .event span:after {
@@ -555,7 +561,7 @@ footer {
 .widget_social {
   text-align: left;
   float: left;
-  width: 28.571428571428573%;
+  width: 28.57142857%;
 }
 .soc-icon {
   display: inline-block;
@@ -597,7 +603,7 @@ footer {
 .widget_feed {
   text-align: left;
   float: left;
-  width: 42.85714285714286%;
+  width: 42.85714286%;
 }
 .widget_feed input[type=text] {
   height: 40px;
@@ -615,7 +621,7 @@ footer {
 .widget_contact {
   text-align: right;
   float: left;
-  width: 28.571428571428573%;
+  width: 28.57142857%;
 }
 .copyright {
   text-align: center;
@@ -626,7 +632,7 @@ footer {
 /* =========================================================
    Media queries
    ========================================================= */
-@media (max-width: 960px) {
+@media screen and (max-width: 960px) {
   .container {
     padding: 0 10px;
   }
@@ -645,7 +651,7 @@ footer {
     padding: 100px 0;
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 40px;
   }
@@ -711,7 +717,7 @@ footer {
     text-align: center;
   }
 }
-@media (max-width: 640px) {
+@media screen and (max-width: 640px) {
   footer {
     padding: 20px 0 20px;
   }
@@ -750,7 +756,7 @@ footer {
     height: 0;
   }
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .widget_social {
     width: 100%;
     float: none;

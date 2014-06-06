@@ -1,6 +1,6 @@
-@import "reset.less";
-@import "elements.less"; 
-@import "fluid-gs.less"; 
+@import "../../../global/styles/reset.less";
+@import "../../../global/styles/elements.less"; 
+@import "../../../global/styles/fluid-gs.less"; 
 
 
 /* =========================================================
@@ -55,19 +55,22 @@ nav {
 	display: inline-block;	
 	width: 100%;
 	max-width: 400px;
+	vertical-align: top;
 	
 	& input[type=text] {
-		width: 68%;
+		width: 65%;
 		padding: 0 10px;
 		border: none;
 		font-size: 16px;
+		vertical-align: top;
 	}
 	& input[type=submit] {
-		width: 32%;
+		width: 30%;
 		border: none;
 		font-size: 16px;
 		font-weight: bold;
 		margin-left: -5px;
+		vertical-align: top;
 	}		
 }
 	
@@ -111,7 +114,8 @@ header{
 			color:#fff;
 			background-color: #9b242d;
 		}
-		
+				
+	
 .promo {
 	width: 100%;
 	min-height: 600px;
@@ -124,6 +128,7 @@ header{
 	.promo_title{
 		text-transform: uppercase;
 		color: @light-color;
+		text-shadow: 1px 1px 3px rgba(0,0,0,.5); 
 	}
 	.promo_slogan {
 		margin-top: 15px;
@@ -158,6 +163,7 @@ header{
 		font-size: 40px;
 		font-weight: bold;
 		color: @light-color;	
+		text-shadow: 1px 1px 3px rgba(0,0,0,.5); 
 	}
 	.services_text {
 		margin-top: 10px;
@@ -261,7 +267,6 @@ header{
 				margin: 0 auto 30px;
 			}
 		}
-		
 .events {
 	width: 100%;
 	padding: 90px 0 145px;
@@ -430,7 +435,7 @@ footer {
    Media queries
    ========================================================= */
    
-@media ( max-width:960px ) {
+@media screen and ( max-width:960px ) {
 	.container {
 		padding: 0 10px;
 	}
@@ -449,7 +454,7 @@ footer {
 		padding: 100px 0; 
 	}
 }
-@media ( max-width:768px ) {
+@media screen and ( max-width:768px ) {
 	h1{
 		font-size: 40px;
 	}
@@ -520,7 +525,7 @@ footer {
 		text-align: center;
 	}
 }
-@media ( max-width:640px ) {
+@media screen and ( max-width:640px ) {
 	footer {
 		padding: 20px 0 20px;
 	}	
@@ -550,7 +555,7 @@ footer {
 		.clearfix;
 	}
 }
-@media (max-width:480px){
+@media screen and (max-width:480px){
 	.widget_social{
 		width: 100%;
 		float: none;
