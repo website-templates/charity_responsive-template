@@ -14,29 +14,10 @@ In reset.css most of elements `box-sizing` sets to `border-box`.
 
 Screenshots
 ---
-**Width 1440px (without scrollbar)**
+**You can see more screenshots [here](screenshots/)**
 
-![charity fluid template 1440px](screenshots/charity_website-template_1440px.jpg)
-
----
-
-
-**Width 960px (without scrollbar)**
-
-![charity fluid template 960px](screenshots/charity_website-template_960px.jpg)
+![Mockup demo](screenshots/pic.jpg)
 
 ---
 
-
-**Width 768px (without scrollbar)**
-
-![charity fluid template 768px](screenshots/charity_website-template_768px.jpg)
-
----
-
-
-**Width 480px (without scrollbar)**
-
-![charity fluid template 480px](screenshots/charity_website-template_480px.jpg)
-
----
+Product mockup created with [http://frame.lab25.co.uk/](http://frame.lab25.co.uk/)
