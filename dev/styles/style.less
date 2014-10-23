@@ -1,6 +1,7 @@
-@import "../../../global/styles/reset.less";
-@import "../../../global/styles/elements.less"; 
-@import "../../../global/styles/fluid-gs.less"; 
+@import "components/_reset.less";
+@import "components/_elements.less"; 
+@import "components/_fluid-gs.less"; 
+@import "components/_annotation.less";
 
 
 /* =========================================================
@@ -148,7 +149,7 @@ header{
 		.box-shadow(0, 0, 0, 6px, rgba(0,0,0,.1));
 		.linear-gradient(bottom, #f0f0f0, #fff, #f0f0f0);
 		.rounded(28px);
-		.transition(all,.5);
+		.transition(all,.5s);
 		
 		&:hover{
 			.scale(1.1);
@@ -385,7 +386,7 @@ footer {
 					margin: 0 10px 0 0;
 					background: url("../img/soc-icon-sprite.png") no-repeat;
 					.hidentext;	
-					.transition(all,.3);
+					.transition(all,.3s);
 
 					&.fb {
 						background-position: 0 0;
