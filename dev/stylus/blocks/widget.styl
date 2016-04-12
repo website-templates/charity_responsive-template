@@ -1,0 +1,90 @@
+// $Single widget
+$block = ".widget"
+
+{$block}
+	float left
+
+	&_social
+		text-align left
+		gs-column(2,7)
+
+		@media screen and ( max-width: 640px )
+			gs-column(2,5)
+			padding 10px 0
+
+		@media screen and (max-width:  480px)
+			width 100%
+			float none
+			text-align center
+			clear both
+
+	&_feed
+		text-align left
+		gs-column(3,7)
+
+		@media screen and ( max-width: 640px )
+			gs-column(3,5)
+			padding 10px 0
+
+		@media screen and (max-width:  480px)
+			width 100%
+			float none
+			text-align center
+			clear both
+
+		& input[type=text]
+			height 40px
+			background-color #494949
+			color #606060
+
+		& input[type=submit]
+			height 40px
+			background-color $selection-color
+			color $light-color
+
+			&:hover
+				background-color darken($selection-color, 10%)
+
+	&_contact
+		text-align right
+		gs-column(2,7)
+
+		@media screen and ( max-width: 640px )
+			width 100%
+			float none
+			padding 10px 0
+			text-align center
+			clear both
+
+	&__icon
+		display inline-block
+		width 40px
+		height 40px
+		margin 0 10px 0 0
+		background url("../images/soc-icon-sprite.png") no-repeat
+		font-size 0
+		overflow hidden
+		white-space nowrap
+		text-indent 999px
+		transition all .3s
+
+		&:hover
+			opacity .6
+			transform scale(1.1)
+
+		&_fb
+			background-position 0 0
+
+		&_tw
+			background-position -41px 0
+
+		&_gplus
+			background-position -82px 0
+
+	&__title
+		color #c6c6c6
+		margin 0 0 15px 0
+
+	&__text
+		color #606060
+		line-height 16px

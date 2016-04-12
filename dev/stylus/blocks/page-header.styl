@@ -1,0 +1,45 @@
+// $Page header
+$block = ".page-header"
+
+{$block}
+	width 100%
+	min-height 115px
+	padding 35px 0
+	background-color $light-color
+
+	&__logo
+		float left
+		width 212px
+		height 45px
+		color $dark-color
+
+		@media screen and ( max-width: 960px )
+			text-align center
+			margin 0 auto
+			float none
+
+	&__nav
+		float right
+		text-align right
+
+		@media screen and ( max-width: 960px )
+			margin 0 auto
+			text-align center
+			float none
+
+	&__nav-link
+		color $dark-color
+		text-transform uppercase
+		transition all .3s
+
+		&:hover
+			text-decoration underline
+
+		&_selected
+			color #fff
+			background-color #9b242d
+			text-decoration none
+			cursor default
+
+			&:hover
+				text-decoration none

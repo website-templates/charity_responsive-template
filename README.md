@@ -108,7 +108,7 @@ Here comes groups of grunt and gulp tasks with some explanations
 
 #### Start 
 Install bower dependencies and place them to dev folders.
-Grunt: `grunt start` Gulp: `gulp start`
+Grunt: `grunt start`
 
 * Install bower components
 * Copy bower components to dev folder
@@ -160,7 +160,7 @@ Grunt: `grunt rebuild`
 
 #### Server 
 Run server without watching for changes.
-Grunt: `grunt server` Gulp: `gulp server`
+Grunt: `grunt server`
 
 * Run BrowserSync static server
 

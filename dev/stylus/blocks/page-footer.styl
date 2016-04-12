@@ -1,0 +1,26 @@
+// $Page footer
+$block = ".page-footer"
+
+{$block}
+	width 100%
+	padding 60px 0 40px
+	background-color $dark-color
+
+	@media screen and ( max-width: 640px )
+		padding 20px 0 20px
+
+	&__nav
+		margin 0 auto
+		text-align center
+
+	&__nav-link
+		color #606060
+		transition all .3s
+
+		&:hover
+			text-decoration underline
+
+
+		&_selected
+			color #fff
+			text-decoration none

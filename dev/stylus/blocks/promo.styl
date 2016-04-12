@@ -1,0 +1,41 @@
+// $Promo section
+$block = ".promo"
+
+{$block}
+	width 100%
+	min-height 600px
+	padding 225px 0 175px
+	background #af6967 url("../images/bg/promo.jpg") 0 0 no-repeat fixed
+	text-align center
+	background-size cover
+
+	@media screen and ( max-width: 960px )
+		min-height 400px
+		padding 100px 0
+
+	&__title
+		text-transform uppercase
+		color $light-color
+		text-shadow 1px 1px 3px rgba(0,0,0,.5)
+
+	&__slogan
+		margin-top 15px
+		line-height 1.2
+		color $light-color
+
+	&__button
+		display block
+		width 270px
+		height 56px
+		margin 45px auto 0
+		color #46a651
+		font-size 26px
+		font-weight bold
+		line-height 56px
+		box-shadow 0 0 0 6px rgba(0,0,0,.1)
+		background linear-gradient(to bottom, #fff, #f0f0f0)
+		border-radius 28px
+		transition all .5s
+
+		&:hover
+			transform scale(1.1)

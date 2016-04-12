@@ -1,0 +1,67 @@
+// $Event card
+$block = ".event"
+
+{$block}
+	float left
+	gs-column(1,3,4%)
+
+	&:hover &__date span
+		background-color $selection-color
+
+	&:hover &__date span:after
+		border-top-color $selection-color
+
+	&__date
+		font-size 30px
+		color #9b242d
+
+		& span
+			display block
+			position relative
+			width 88px
+			height 88px
+			margin 0 auto 30px
+			padding 20px 0
+			background-color $dark-color
+			font-size 36px
+			color $light-color
+			font-weight bold
+
+			&:after
+				display block
+				position absolute
+				content ""
+				bottom -14px
+				left 50%
+				margin-left -15px
+				border-top 15px solid $dark-color
+				border-right 15px solid transparent
+				border-left 15px solid transparent
+
+	&__title
+		font-size 18px
+		margin 30px 0 15px
+
+		@media screen and ( max-width: 768px )
+			margin 15px 0 0
+
+	&__text
+		line-height 22px
+
+		@media screen and ( max-width: 640px )
+			display none
+
+	&__button
+		display inline-block
+		width 85px
+		height 35px
+		margin 30px 0 0
+		padding 8px 0 0
+		border none
+		font-size 14px
+		text-transform uppercase
+		background-color $dark-color
+		color $light-color
+
+		&:hover
+			background-color $selection-color
