@@ -1,0 +1,26 @@
+{
+	"site": {
+		"lang": "en",
+		"title": "Charity template",
+		"titleDelim": " | ",
+		"description": "Free charity website template",
+		"keywords": "html template, theme, freebie, opensource",
+		"url": "===site-full-url==="
+	},
+	"modules": {
+		"googleFonts": "https://fonts.googleapis.com/css?family=Roboto+Slab",
+		"bodyJs": false,
+		"headJs": false,
+		"ieJs": true,
+		"customCss": true,
+		"noscriptCss": false,
+		"ieCss": false,
+		"ieMessage": true,
+		"googleAnalytics": false,
+		"twitterCard": false,
+		"openGraph": false
+	},
+	"links": {
+		"twitterCard": "===twittercard-validation-account==="
+	}
+}

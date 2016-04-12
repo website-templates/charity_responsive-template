@@ -1,0 +1,50 @@
+*::selection
+	background $light-color
+	color $dark-color
+
+*::-moz-selection
+	background $light-color
+	color $dark-color
+
+
+body
+	font-family "Roboto Slab", serif
+
+h1
+	font-size 50px
+	font-weight lighter
+
+	@media screen and ( max-width:768px )
+		font-size 40px
+
+h2
+	font-size 24px
+	font-weight lighter
+
+	@media screen and ( max-width: 768px )
+		font-size 20px
+
+h3
+	font-size 18px
+	font-weight lighter
+
+	@media screen and ( max-width: 768px )
+		font-size 16px
+
+p
+	font-size 14px
+
+a
+	text-decoration none
+
+	&:hover
+		text-decoration underline
+
+
+.container
+	max-width 1024px
+	margin 0 auto
+	clearfix()
+
+	@media screen and ( max-width: 960px )
+		padding 0 10px
