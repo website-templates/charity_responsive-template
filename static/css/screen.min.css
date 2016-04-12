@@ -214,6 +214,10 @@ a:hover {
 	vertical-align: top;
 }
 
+.subscribe-form input[type=text]:focus {
+	outline: none;
+}
+
 .subscribe-form input[type=submit] {
 	width: 30%;
 	border: none;
@@ -221,6 +225,10 @@ a:hover {
 	font-weight: bold;
 	margin-left: -5px;
 	vertical-align: top;
+}
+
+.subscribe-form input[type=submit]:focus {
+	outline: none;
 }
 
 .logo {
@@ -497,7 +505,7 @@ a:hover {
 	width: 88px;
 	height: 88px;
 	margin: 0 auto 30px;
-	padding: 29px 0;
+	padding: 20px 0;
 	background-color: #373838;
 	font-size: 36px;
 	color: #fff;
@@ -530,7 +538,7 @@ a:hover {
 	width: 85px;
 	height: 35px;
 	margin: 30px 0 0;
-	padding: 10px 0 0;
+	padding: 8px 0 0;
 	border: none;
 	font-size: 14px;
 	text-transform: uppercase;
