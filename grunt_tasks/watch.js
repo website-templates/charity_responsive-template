@@ -1,5 +1,17 @@
 // Run tasks whenever watched files change
 module.exports = {
+	coffee: {
+		files: [
+			'<%= paths.dev.coffee %>/*.coffee'
+		],
+		tasks: [
+			'newer:coffee:main',
+			'rigger:main'
+		],
+		options: {
+			spawn: false
+		}
+	},
 	js: {
 		files: [
 			'<%= paths.dev.js %>/*.js',
@@ -12,14 +24,25 @@ module.exports = {
 			spawn: false
 		}
 	},
+	sass: {
+		files: [
+			'<%= paths.dev.sass %>/*.{sass,scss}'
+		],
+		tasks: [
+			'newer:sass:main',
+			'postcss:dev'
+		],
+		options: {
+			spawn: false
+		}
+	},
 	stylus: {
 		files: [
 			'<%= paths.dev.stylus %>/*.styl'
 		],
 		tasks: [
 			'newer:stylus:main',
-			'autoprefixer:main',
-        	'cmq:main'
+			'postcss:dev'
 		],
 		options: {
 			spawn: false
@@ -54,6 +77,17 @@ module.exports = {
 		],
 		tasks: [
 			'sync:images'
+		],
+		options: {
+			spawn: false
+		}
+	},
+	fonts: {
+		files: [
+			'<%= paths.dev.fonts %>/**/*.{eot,svg,ttf,otf,woff,woff2}'
+		],
+		tasks: [
+			'sync:fonts'
 		],
 		options: {
 			spawn: false

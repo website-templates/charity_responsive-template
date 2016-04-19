@@ -134,7 +134,6 @@ Build task.
 Grunt: `grunt build`
 
 * Minify images
-* Apply styleguide to stylesheets
 * Minify javascript files
 * Minify stylesheets
 * Minify html
@@ -153,7 +152,6 @@ Grunt: `grunt rebuild`
 * Sync helpers and other assets
 * Sync images
 * Minify images
-* Apply styleguide to stylesheets
 * Minify javascript files
 * Minify stylesheets
 * Minify html
