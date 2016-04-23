@@ -1,4 +1,24 @@
+////////////////////////////////////////
 // $Event card
+////////////////////////////////////////
+
+//////////////////////////////////////// Block variables
+// Colors
+$c-event_date_bg = $c-dark
+$c-event_date_text = #9b242d
+$c-event_date_number = $c-light
+$c-event_date_hover_number = $c-accent
+$c-event_date_bd = transparent
+$c-event_date_bd_top = $c-dark
+$c-event_date_hover_bd_top = $c-accent
+
+$c-event_btn_bg = $c-dark
+$c-event_btn_text = $c-light
+$c-event_btn_hover_bg = $c-accent
+
+//////////////////////////////////////// Block mixins and functions
+
+//////////////////////////////////////// Block styles
 $block = ".event"
 
 {$block}
@@ -6,14 +26,14 @@ $block = ".event"
 	gs-column(1,3,4%)
 
 	&:hover &__date span
-		background-color $selection-color
+		background-color $c-event_date_hover_number
 
 	&:hover &__date span:after
-		border-top-color $selection-color
+		border-top-color $c-event_date_hover_bd_top
 
 	&__date
 		font-size 30px
-		color #9b242d
+		color $c-event_date_text
 
 		& span
 			display block
@@ -22,9 +42,9 @@ $block = ".event"
 			height 88px
 			margin 0 auto 30px
 			padding 20px 0
-			background-color $dark-color
+			background-color $c-event_date_bg
 			font-size 36px
-			color $light-color
+			color $c-event_date_number
 			font-weight bold
 
 			&:after
@@ -34,9 +54,9 @@ $block = ".event"
 				bottom -14px
 				left 50%
 				margin-left -15px
-				border-top 15px solid $dark-color
-				border-right 15px solid transparent
-				border-left 15px solid transparent
+				border-top 15px solid $c-event_date_bd_top
+				border-right 15px solid $c-event_date_bd
+				border-left 15px solid $c-event_date_bd
 
 	&__title
 		font-size 18px
@@ -60,8 +80,8 @@ $block = ".event"
 		border none
 		font-size 14px
 		text-transform uppercase
-		background-color $dark-color
-		color $light-color
+		background-color $c-event_btn_bg
+		color $c-event_btn_text
 
 		&:hover
-			background-color $selection-color
+			background-color $c-event_btn_hover_bg

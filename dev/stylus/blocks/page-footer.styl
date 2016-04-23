@@ -1,10 +1,22 @@
+////////////////////////////////////////
 // $Page footer
+////////////////////////////////////////
+
+//////////////////////////////////////// Block variables
+// Colors
+$c-page-footer_bg = $c-dark
+$c-page-footer_nav-link_text = #606060
+$c-page-footer_nav-link_selected_text = #fff
+
+//////////////////////////////////////// Block mixins and functions
+
+//////////////////////////////////////// Block styles
 $block = ".page-footer"
 
 {$block}
 	width 100%
 	padding 60px 0 40px
-	background-color $dark-color
+	background-color $c-page-footer_bg
 
 	@media screen and ( max-width: 640px )
 		padding 20px 0 20px
@@ -14,7 +26,7 @@ $block = ".page-footer"
 		text-align center
 
 	&__nav-link
-		color #606060
+		color $c-page-footer_nav-link_text
 		transition all .3s
 
 		&:hover
@@ -22,5 +34,5 @@ $block = ".page-footer"
 
 
 		&_selected
-			color #fff
+			color $c-page-footer_nav-link_selected_text
 			text-decoration none

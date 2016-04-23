@@ -1,4 +1,22 @@
+////////////////////////////////////////
 // $Single widget
+////////////////////////////////////////
+
+//////////////////////////////////////// Block variables
+// Colors
+$c-widget_title = #c6c6c6
+$c-widget_text = #606060
+
+$c-widget_input_bg = #494949
+$c-widget_input_text = #606060
+
+$c-widget_submit_bg = $c-accent
+$c-widget_submit_text = $c-light
+
+
+//////////////////////////////////////// Block mixins and functions
+
+//////////////////////////////////////// Block styles
 $block = ".widget"
 
 {$block}
@@ -34,16 +52,16 @@ $block = ".widget"
 
 		& input[type=text]
 			height 40px
-			background-color #494949
-			color #606060
+			background-color $c-widget_input_bg
+			color $c-widget_input_text
 
 		& input[type=submit]
 			height 40px
-			background-color $selection-color
-			color $light-color
+			background-color $c-widget_submit_bg
+			color $c-widget_submit_text
 
 			&:hover
-				background-color darken($selection-color, 10%)
+				background-color darken($c-accent, 10%)
 
 	&_contact
 		text-align right
@@ -82,9 +100,9 @@ $block = ".widget"
 			background-position -82px 0
 
 	&__title
-		color #c6c6c6
+		color $c-widget_title
 		margin 0 0 15px 0
 
 	&__text
-		color #606060
+		color $c-widget_text
 		line-height 16px

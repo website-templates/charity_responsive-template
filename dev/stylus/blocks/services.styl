@@ -1,4 +1,29 @@
+////////////////////////////////////////
 // $Services section
+////////////////////////////////////////
+
+//////////////////////////////////////// Block variables
+// Colors
+$c-services_title_text = $c-light
+$c-services_text = $c-light
+$c-services_goals_bg = #f1efec
+$c-services_donate_bg = #9b242d
+$c-services_news_bg = #46a651
+$c-services_soc_bg = #fff
+
+$c-services_input_bg = #5ec069
+$c-services_input_text = #46a651
+
+$c-services_submit_bg = #348e3e
+$c-services_submit_text = $c-light
+
+$c-services_icon_bg = #3b5997
+$c-services_icon_text = $c-light
+
+
+//////////////////////////////////////// Block mixins and functions
+
+//////////////////////////////////////// Block styles
 $block = ".services"
 
 {$block}
@@ -8,7 +33,7 @@ $block = ".services"
 	&__title
 		font-size 40px
 		font-weight bold
-		color $light-color
+		color $c-services_title_text
 		text-shadow 1px 1px 3px rgba(0,0,0,.5)
 
 		@media screen and ( max-width: 768px )
@@ -18,7 +43,7 @@ $block = ".services"
 		margin-top 10px
 		font-size 16px
 		line-height 22px
-		color $light-color
+		color $c-services_text
 
 		@media screen and ( max-width: 768px )
 			font-size 14px
@@ -27,8 +52,10 @@ $block = ".services"
 	&__goals
 		width 64%
 		height 320px
-		background #f1efec url("../images/bg/info.jpg") right center no-repeat
-		-webkit-background-size 36% 100%
+		background-color $c-services_goals_bg
+		background-image url("../images/bg/info.jpg")
+		background-position right center
+		background-repeat no-repeat
 		background-size 36% 100%
 		float left
 		text-align right
@@ -36,7 +63,7 @@ $block = ".services"
 
 		@media screen and ( max-width: 768px )
 			height 220px
-			background #f1efec
+			background-image none
 			padding 80px 0
 
 	&__logo
@@ -53,31 +80,32 @@ $block = ".services"
 	&__donate
 		width 36%
 		height 320px
-		background #9b242d
+		background-color $c-services_donate_bg
 		float right
 		padding 135px 0 0 40px
 
 		&:hover
-			background darken(#9b242d, 10%)
+			background darken($c-services_donate_bg, 10%)
 
 		@media screen and ( max-width: 768px )
 			height 220px
-			background #9b242d
 			padding 80px 0 0 30px
 
 	&__news
 		width 64%
 		height 640px
 		padding 65px 80px 0 0
-		background #46a651 url("../images/bg/news.jpg") left bottom no-repeat
-		-webkit-background-size 100% 50%
+		background-color $c-services_news_bg
+		background-image url("../images/bg/news.jpg")
+		background-position left bottom
+		background-repeat no-repeat
 		background-size 100% 50%
 		float left
 
 		@media screen and ( max-width: 768px )
 			height 220px
 			padding 20px 30px 0 10px
-			background #46a651
+			background-image none
 
 	&__subscribe
 		max-width 540px
@@ -92,29 +120,32 @@ $block = ".services"
 
 		& input[type=text]
 			height 45px
-			background-color #5ec069
-			color #46a651
+			background-color $c-services_input_bg
+			color $c-services_input_text
 
 		& input[type=submit]
 			height 45px
-			background-color #348e3e
-			color $light-color
+			background-color $c-services_submit_bg
+			color $c-services_submit_text
 
 			&:hover
-				background-color darken(#348e3e, 10%)
+				background-color darken($c-services_submit_bg, 10%)
 
 	&__soc
 		position relative
 		width 36%
 		height 640px
-		background #fff url("../images/bg/like.jpg") center bottom no-repeat
+		background-color $c-services_soc_bg
+		background-image url("../images/bg/like.jpg")
+		background-position center bottom
+		background-repeat no-repeat
 		-webkit-background-size 100% 50%
 		background-size cover
 		float right
 
 		@media screen and ( max-width: 768px )
 			height 220px
-			background #fff
+			background-image none
 
 	&__icon
 		display block
@@ -124,10 +155,10 @@ $block = ".services"
 		max-width 320px
 		height 320px
 		padding-top 120px
-		background #3b5997
+		background-color $c-services_icon_bg
 		font-size 16px
 		line-height 22px
-		color $light-color
+		color $c-services_icon_text
 		text-align center
 
 		@media screen and ( max-width: 768px )
@@ -137,7 +168,7 @@ $block = ".services"
 			padding-top 30px
 
 		&:hover
-			background darken(#3b5997, 10%)
+			background darken($c-services_icon_bg, 10%)
 
 		&:before
 			content ""

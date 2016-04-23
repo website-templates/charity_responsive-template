@@ -1,17 +1,30 @@
+////////////////////////////////////////
 // $Page header
+////////////////////////////////////////
+
+//////////////////////////////////////// Block variables
+// Colors
+$c-page-header_bg = $c-light
+$c-page-header_logo_text = $c-dark
+$c-page-header_nav-link_text = $c-dark
+$c-page-header_nav-link_selected_text = #9b242d
+
+//////////////////////////////////////// Block mixins and functions
+
+//////////////////////////////////////// Block styles
 $block = ".page-header"
 
 {$block}
 	width 100%
 	min-height 115px
 	padding 35px 0
-	background-color $light-color
+	background-color $c-page-header_bg
 
 	&__logo
 		float left
 		width 212px
 		height 45px
-		color $dark-color
+		color $c-page-header_logo_text
 
 		@media screen and ( max-width: 960px )
 			text-align center
@@ -28,7 +41,7 @@ $block = ".page-header"
 			float none
 
 	&__nav-link
-		color $dark-color
+		color $c-page-header_nav-link_text
 		text-transform uppercase
 		transition all .3s
 
@@ -37,7 +50,7 @@ $block = ".page-header"
 
 		&_selected
 			color #fff
-			background-color #9b242d
+			background-color $c-page-header_nav-link_selected_text
 			text-decoration none
 			cursor default
 

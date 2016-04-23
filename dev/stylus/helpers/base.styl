@@ -1,10 +1,24 @@
+////////////////////////////////////////
+// Common styles
+////////////////////////////////////////
+
+////////////////////////////////////////Variables
+// Colors
+$c-selection_text = $c-dark
+$c-selection_bg = $c-light
+
+//////////////////////////////////////// Mixins and functions
+
+
+//////////////////////////////////////// Styles
+
 *::selection
-	background $light-color
-	color $dark-color
+	background $c-selection_bg
+	color $c-selection_text
 
 *::-moz-selection
-	background $light-color
-	color $dark-color
+	background $c-selection_bg
+	color $c-selection_text
 
 
 body

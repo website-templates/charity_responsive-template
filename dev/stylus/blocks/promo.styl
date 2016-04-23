@@ -1,11 +1,23 @@
+////////////////////////////////////////
 // $Promo section
+////////////////////////////////////////
+
+//////////////////////////////////////// Block variables
+// Colors
+$c-promo_bg = #af6967
+$c-promo_title_text = $c-light
+$c-promo_btn_text = #46a651
+
+//////////////////////////////////////// Block mixins and functions
+
+//////////////////////////////////////// Block styles
 $block = ".promo"
 
 {$block}
 	width 100%
 	min-height 600px
 	padding 225px 0 175px
-	background #af6967 url("../images/bg/promo.jpg") 0 0 no-repeat fixed
+	background $c-promo_bg url("../images/bg/promo.jpg") 0 0 no-repeat fixed
 	text-align center
 	background-size cover
 
@@ -15,20 +27,20 @@ $block = ".promo"
 
 	&__title
 		text-transform uppercase
-		color $light-color
+		color $c-promo_title_text
 		text-shadow 1px 1px 3px rgba(0,0,0,.5)
 
 	&__slogan
 		margin-top 15px
 		line-height 1.2
-		color $light-color
+		color $c-light
 
 	&__button
 		display block
 		width 270px
 		height 56px
 		margin 45px auto 0
-		color #46a651
+		color $c-promo_btn_text
 		font-size 26px
 		font-weight bold
 		line-height 56px

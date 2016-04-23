@@ -1,10 +1,20 @@
+////////////////////////////////////////
 // $Events section
+////////////////////////////////////////
+
+//////////////////////////////////////// Block variables
+// Colors
+$c-events_bg = $c-light
+
+//////////////////////////////////////// Block mixins and functions
+
+//////////////////////////////////////// Block styles
 $block = ".events"
 
 {$block}
 	width 100%
 	padding 90px 0 145px
-	background-color $light-color
+	background-color $c-events_bg
 	text-align center
 
 	@media screen and ( max-width: 768px )
@@ -14,7 +24,7 @@ $block = ".events"
 		padding 20px 0 30px
 
 	&__title
-		color $dark-color
+		color $c-dark
 		margin-bottom 65px
 
 		@media screen and ( max-width: 768px )
