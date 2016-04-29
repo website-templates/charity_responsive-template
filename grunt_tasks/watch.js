@@ -53,19 +53,19 @@ module.exports = {
 			'<%= paths.dev.data %>/*.*'
 		],
 		tasks: [
-			'async_jade_data:main',
-			'jade:main'
+			'pug:main'
 		],
 		options: {
 			spawn: false
 		}
 	},
-	jade: {
+	pug: {
 		files: [
+			'<%= paths.dev.pug %>/pages/*.pug',
 			'<%= paths.dev.jade %>/pages/*.jade'
 		],
 		tasks: [
-			'newer:jade:main'
+			'newer:pug:main'
 		],
 		options: {
 			spawn: false

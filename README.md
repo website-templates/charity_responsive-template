@@ -43,9 +43,9 @@ Product mockup created with [http://frame.lab25.co.uk/](http://frame.lab25.co.uk
 ├── dev/                                       * site source
 │   ├── images/                                * image sources
 |	│
-│   ├── jade/                                  * templates
+│   ├── pug/                                   * templates
 |	|	├── blocks/                            * blocks library
-|	│   |   └── block.jade
+|	│   |   └── block.pug
 |	│   ├── helpers/                           * helper mixins
 |	│   ├── vendor/                            * third-party code
 |	│   ├── layouts/                           * page layouts
@@ -100,7 +100,7 @@ Product mockup created with [http://frame.lab25.co.uk/](http://frame.lab25.co.uk
 This project have .editorconfig file at the root that used by your code editor with editorconfig plugin. It describes codestyle like indent style, trailing whitespaces etc. See more details [here](http://editorconfig.org/)
 
 ## Site configuration
-This boilerplate use Jade templates with external data configs. 
+This boilerplate use Pug templates with external data configs. 
 Main settings can be found in `dev/data/config.json` file. And they're available for usage in templates with `config.key-name`
 
 ## Tasks
@@ -122,7 +122,7 @@ Grunt: `grunt dev`
 * Compile Stylus stylesheets
 * Add vendor prefixes in css
 * Combine media queries in css files
-* Compile Jade templates
+* Compile Pug templates
 * Sync helpers and other assets
 * Sync images
 * Run BrowserSync static server with live reload using 
@@ -148,7 +148,7 @@ Grunt: `grunt rebuild`
 * Compile Stylus stylesheets
 * Add vendor prefixes in css
 * Combine media queries in css files
-* Compile Jade templates
+* Compile Pug templates
 * Sync helpers and other assets
 * Sync images
 * Minify images
