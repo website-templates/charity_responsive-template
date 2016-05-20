@@ -10,7 +10,7 @@ include ../_helpers-list
 block variables
 
 doctype html
-html(lang="#{config.site.lang}")
+html(lang= pageLang ? pageLang : config.site.lang)
 	head
 		//- Meta information
 		+head-meta()

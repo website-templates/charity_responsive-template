@@ -5,7 +5,7 @@
 		"titleDelim": " | ",
 		"description": "Free charity website template",
 		"keywords": "html template, theme, freebie, opensource",
-		"url": "===site-full-url==="
+		"url": "http://website-templates.github.io/charity_responsive-template"
 	},
 	"modules": {
 		"googleFonts": "https://fonts.googleapis.com/css?family=Roboto+Slab",
@@ -21,6 +21,7 @@
 		"openGraph": false
 	},
 	"links": {
-		"twitterCard": "===twittercard-validation-account==="
+		"twitterCardCreator": "===twittercard-creator-account===",
+		"twitterCardAccount": "===twittercard-main-account==="
 	}
 }
