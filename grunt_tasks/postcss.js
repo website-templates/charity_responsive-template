@@ -12,8 +12,7 @@ module.exports = {
 						'Safari >= 5'
 					],
 					cascade: true
-				}),
-				require('css-mqpacker')({sort: true})
+				})
 		    ]
 		},
 		files:[{

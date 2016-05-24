@@ -8,11 +8,15 @@ module.exports = {
 
 	// Dev task with static server
 	'dev': [
+		// 'coffee:main',
 		'rigger:main',
+		// 'sass:main',
 		'stylus:main',
 		'postcss:dev',
+		'cmq:main',
 		'pug:main',
 		'sync:helpers',
+		// 'sync:fonts',
 		'sync:images',
 		'browserSync:dev',
 		'watch'
@@ -29,11 +33,15 @@ module.exports = {
 
 	// Regenerate and build project by running all tasks
 	'rebuild': [
+		// 'coffee:main',
 		'rigger:main',
+		// 'sass:main',
 		'stylus:main',
 		'postcss:dev',
+		'cmq:main',
 		'pug:main',
 		'sync:helpers',
+		// 'sync:fonts',
 		'sync:images',
 		'imagemin:main',
 		'uglify:main',
