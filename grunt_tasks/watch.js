@@ -26,10 +26,10 @@ module.exports = {
 	},
 	sass: {
 		files: [
-			'<%= paths.dev.sass %>/*.{sass,scss}'
+			'<%= paths.dev.sass %>/**/*.{sass,scss}'
 		],
 		tasks: [
-			'newer:sass:main',
+			'sass:main',
 			'postcss:dev',
 			'cmq:main'
 		],
@@ -39,10 +39,10 @@ module.exports = {
 	},
 	stylus: {
 		files: [
-			'<%= paths.dev.stylus %>/*.styl'
+			'<%= paths.dev.stylus %>/**/*.styl'
 		],
 		tasks: [
-			'newer:stylus:main',
+			'stylus:main',
 			'postcss:dev',
 			'cmq:main'
 		],
