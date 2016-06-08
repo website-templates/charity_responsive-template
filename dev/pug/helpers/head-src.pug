@@ -11,7 +11,7 @@ mixin head-src()
 	//- STYLESHEETS
 	//- Google fonts
 	if config.modules.googleFonts
-	link(href="#{config.modules.googleFonts}" rel="stylesheet" type="text/css")
+	link(href= config.modules.googleFonts rel="stylesheet" type="text/css")
 
 	//- Main stylesheet
 	link(rel="stylesheet", href="static/css/screen.min.css")
@@ -25,18 +25,8 @@ mixin head-src()
 		noscript
 			link(rel="stylesheet", href="static/css/noscript.min.css")
 
-	//- IE fix stylesheet
-	if config.modules.ieCss
-		<!--[if lt IE 9]><link rel="stylesheet" href="static/css/ie.min.css"><![endif]-->
-
 
 	//- SCRIPTS
 	//- Head javascript
 	if config.modules.headJs
 		script(src="static/js/head.min.js")
-
-	//- CSS3 media queries and HTML5 tags support for old IE
-	if config.modules.ieJs
-		<!--[if lt IE 9]><script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script><script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script><![endif]-->
-
-		<!-- Or you can use these two scripts from local folder, dont forget for conditional comments for old IE static/js/ie.min.js -->

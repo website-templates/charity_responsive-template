@@ -11,12 +11,8 @@
 		"googleFonts": "https://fonts.googleapis.com/css?family=Roboto+Slab",
 		"bodyJs": false,
 		"headJs": false,
-		"ieJs": true,
 		"customCss": true,
 		"noscriptCss": false,
-		"ieCss": false,
-		"ieMessage": true,
-		"googleAnalytics": false,
 		"twitterCard": false,
 		"openGraph": false
 	},

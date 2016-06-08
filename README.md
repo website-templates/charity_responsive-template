@@ -41,6 +41,8 @@ Product mockup created with [http://frame.lab25.co.uk/](http://frame.lab25.co.uk
 ├── screenshots/                               * responsive test screenshots
 |
 ├── dev/                                       * site source
+|   ├── coffee/                                * coffee scripts
+|	│
 │   ├── images/                                * image sources
 |	│
 │   ├── pug/                                   * templates
@@ -54,7 +56,6 @@ Product mockup created with [http://frame.lab25.co.uk/](http://frame.lab25.co.uk
 │   ├── js/                                    * compiled and source js
 |	|   ├── vendor/                            * vendor scripts library
 |	|   ├── lib/                               * site scripts library
-|	│   ├── ie.js                              * ie compat scripts
 |	│   ├── head.js                            * head scripts
 |	│   └── body.js                            * vendor scripts
 |	│
@@ -64,6 +65,7 @@ Product mockup created with [http://frame.lab25.co.uk/](http://frame.lab25.co.uk
 |	│   ├── helpers/                           * mixins and vars
 |	│   ├── vendor/                            * third-party code
 |	│   ├── custom.styl
+|	│   ├── noscript.styl
 |	│   └── screen.styl
 |	│
 │   ├── helpers/                               * helper files
@@ -109,14 +111,12 @@ Install bower dependencies and place them to dev folders.
 Grunt: `grunt start`
 
 * Install bower components
-* Copy bower components to dev folder
 * Remove gitkeep files
 
 #### Dev
 Dev task with static server.
 Grunt: `grunt dev`
 
-* Concatenate javascripts
 * Compile Stylus stylesheets
 * Add vendor prefixes in css
 * Combine media queries in css files
@@ -132,7 +132,6 @@ Build task.
 Grunt: `grunt build`
 
 * Minify images
-* Minify javascript files
 * Minify stylesheets
 * Minify html
 * Run BrowserSync static server 
@@ -142,7 +141,6 @@ Grunt: `grunt build`
 Regenerate and build project by running all tasks.
 Grunt: `grunt rebuild`
 
-* Concatenate javascripts
 * Compile Stylus stylesheets
 * Add vendor prefixes in css
 * Combine media queries in css files
@@ -150,7 +148,6 @@ Grunt: `grunt rebuild`
 * Sync helpers and other assets
 * Sync images
 * Minify images
-* Minify javascript files
 * Minify stylesheets
 * Minify html
 

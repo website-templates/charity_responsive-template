@@ -6,11 +6,11 @@ module.exports = {
 		options: {
 			checkExistence: true,
 			overrides: {
-				html5shiv: {
-					main: "dist/html5shiv.js"
+				jquery: {
+					main: "dist/jquery.js"
 				},
-				respond: {
-					main: "src/respond.js"
+				modernizr: {
+					main: "modernizr.js"
 				}
 			}
 		}
