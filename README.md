@@ -63,9 +63,7 @@ Product mockup created with [http://frame.lab25.co.uk/](http://frame.lab25.co.uk
 |	│   |   └── block.styl
 |	│   ├── helpers/                           * mixins and vars
 |	│   ├── vendor/                            * third-party code
-|	│   ├── ie.styl
 |	│   ├── custom.styl
-|	│   ├── noscript.styl
 |	│   └── screen.styl
 |	│
 │   ├── helpers/                               * helper files
