@@ -112,15 +112,21 @@ html(lang= config.site.lang)
 			| 	text-align: center;
 			| }
 			| .project__item{
+			| 	position: relative;
 			| 	font-family: Georgia, Times, "Times New Roman", serif;
 			| 	font-size: 25px;
 			| 	line-height: 1;
 			| 	text-align: left;
 			| 	color: #f0f0f0;
 			| }
+			| .project__item.is-checked:before{
+			| 	content: "\2713";
+			|	position: absolute;
+			|	right: 100%;
+			| }
 			| .project__item ul,
 			| .project__item ol{
-			| 	margin-left: 20px;
+			| 	margin-left: 40px;
 			| 	margin-bottom: 20px;
 			| 	list-style: none;
 			| }
@@ -137,6 +143,7 @@ html(lang= config.site.lang)
 			| 	display: block;
 			| 	cursor: default;
 			| 	border: none;
+			| 	color: #ccc;
 			| }
 			| .project__link:hover{
 			| 	border-color: transparent;
@@ -145,7 +152,7 @@ html(lang= config.site.lang)
 		div.background.background_image.background_blur
 		div.overlay.overlay_dark
 			main.project
-				h1.project__name.project__name_shadow Charity template
+				h1.project__name.project__name_shadow= config.site.title
 
 				ul.project__list
 					li.project__item

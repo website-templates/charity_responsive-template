@@ -9,7 +9,7 @@ module.exports = {
 	// Dev task with static server
 	'dev': [
 		// 'coffee:main',
-		'rigger:main',
+		// 'rigger:main',
 		// 'sass:main',
 		'stylus:main',
 		'postcss:dev',
@@ -25,7 +25,7 @@ module.exports = {
 	// Build task
 	'build': [
 		'imagemin:main',
-		'uglify:main',
+		// 'uglify:main',
 		'postcss:build',
 		'htmlmin:main',
 		'browserSync:test'
@@ -34,7 +34,7 @@ module.exports = {
 	// Regenerate and build project by running all tasks
 	'rebuild': [
 		// 'coffee:main',
-		'rigger:main',
+		// 'rigger:main',
 		// 'sass:main',
 		'stylus:main',
 		'postcss:dev',
@@ -44,7 +44,7 @@ module.exports = {
 		// 'sync:fonts',
 		'sync:images',
 		'imagemin:main',
-		'uglify:main',
+		// 'uglify:main',
 		'postcss:build',
 		'htmlmin:main'
 	],
