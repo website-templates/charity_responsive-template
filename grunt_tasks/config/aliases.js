@@ -1,7 +1,7 @@
 module.exports = {
 	// Install bower dependencies and place them to dev folders
 	'start': [
-		'shell:bower',
+		// 'shell:bower',
 		// 'bower:main',
 		'clean:gitkeep'
 	],
