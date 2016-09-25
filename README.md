@@ -1,4 +1,4 @@
-# Charity website template
+# Charity website template - ARCHIVED
 
 Nice fluid website template, designed by [cssauthor](http://www.cssauthor.com/free-charity-website-template-psd/) and coded by [Maxim Orlov](https://github.com/orlovmax). 
 
