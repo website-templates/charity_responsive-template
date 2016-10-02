@@ -5,14 +5,7 @@ module.exports = {
 		dest: '<%= paths.dev.js %>/vendor',
 		options: {
 			checkExistence: true,
-			overrides: {
-				jquery: {
-					main: "dist/jquery.js"
-				},
-				modernizr: {
-					main: "modernizr.js"
-				}
-			}
+			overrides: {}
 		}
 	}
 }
