@@ -161,4 +161,4 @@ Grunt: `grunt server`
 This project uses BrowserSync as static server with enabled and configured live reload option.
 
 ## License
-[MIT](http://opensource.org/licenses/MIT)
+[MIT](https://github.com/website-templates/charity_responsive-template/blob/master/LICENSE.md)
