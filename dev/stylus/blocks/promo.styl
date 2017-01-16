@@ -26,16 +26,32 @@ $block = ".promo"
 		min-height 400px
 		padding 100px 0
 
+
+	// $Promo section inner container
+	&__inner
+		max-width 1024px
+		margin 0 auto
+		clearfix()
+
+		@media screen and ( max-width: 960px )
+			padding 0 10px
+
+
+	// $Promo section title
 	&__title
 		text-transform uppercase
 		color $c-promo_title_text
 		text-shadow 1px 1px 3px rgba(0,0,0,.5)
 
+
+	// $Promo section slogan
 	&__slogan
 		margin-top 15px
 		line-height 1.2
 		color $c-light
 
+
+	// $Promo section button
 	&__button
 		display block
 		width 270px
@@ -52,3 +68,4 @@ $block = ".promo"
 
 		&:hover
 			transform scale(1.1)
+			text-decoration none

@@ -22,6 +22,18 @@ $block = ".page-header"
 	padding 35px 0
 	background-color $c-page-header_bg
 
+
+	// $Page header inner container
+	&__inner
+		max-width 1024px
+		margin 0 auto
+		clearfix()
+
+		@media screen and ( max-width: 960px )
+			padding 0 10px
+
+
+	// $Page header logo
 	&__logo
 		float left
 		width 212px
@@ -33,6 +45,8 @@ $block = ".page-header"
 			margin 0 auto
 			float none
 
+
+	// $Page header navigation
 	&__nav
 		float right
 		text-align right
@@ -42,6 +56,8 @@ $block = ".page-header"
 			text-align center
 			float none
 
+
+	// $Page header navigation link
 	&__nav-link
 		color $c-page-header_nav-link_text
 		text-transform uppercase
@@ -50,6 +66,7 @@ $block = ".page-header"
 		&:hover
 			text-decoration underline
 
+		// $Page header navigation link MOD: selected
 		&_selected
 			color #fff
 			background-color $c-page-header_nav-link_selected_text

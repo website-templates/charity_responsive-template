@@ -23,6 +23,8 @@ $block = ".widget"
 {$block}
 	float left
 
+
+	// $Single widget MOD: social
 	&_social
 		text-align left
 		gs-column(2,7)
@@ -37,6 +39,8 @@ $block = ".widget"
 			text-align center
 			clear both
 
+
+	/// $Single widget MOD: feed
 	&_feed
 		text-align left
 		gs-column(3,7)
@@ -64,6 +68,8 @@ $block = ".widget"
 			&:hover
 				background-color darken($c-accent, 10%)
 
+
+	// $Single widget MOD: contact
 	&_contact
 		text-align right
 		gs-column(2,7)
@@ -75,6 +81,8 @@ $block = ".widget"
 			text-align center
 			clear both
 
+
+	// $Single widget icon
 	&__icon
 		display inline-block
 		width 40px
@@ -91,19 +99,27 @@ $block = ".widget"
 			opacity .6
 			transform scale(1.1)
 
+		// $Single widget icon MOD: facebook
 		&_fb
 			background-position 0 0
 
+		// $Single widget icon MOD: twitter
 		&_tw
 			background-position -41px 0
 
+
+		// $Single widget icon MOD: google plus
 		&_gplus
 			background-position -82px 0
 
+
+	// $Single widget title
 	&__title
 		color $c-widget_title
 		margin 0 0 15px 0
 
+
+	// $Single widget text
 	&__text
 		color $c-widget_text
 		line-height 16px

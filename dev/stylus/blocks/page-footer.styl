@@ -23,10 +23,24 @@ $block = ".page-footer"
 	@media screen and ( max-width: 640px )
 		padding 20px 0 20px
 
+
+	// $Page footer inner container
+	&__inner
+		max-width 1024px
+		margin 0 auto
+		clearfix()
+
+		@media screen and ( max-width: 960px )
+			padding 0 10px
+
+
+	// $Page footer navigation
 	&__nav
 		margin 0 auto
 		text-align center
 
+
+	// $Page footer navigation link
 	&__nav-link
 		color $c-page-footer_nav-link_text
 		transition all .3s
@@ -34,7 +48,7 @@ $block = ".page-footer"
 		&:hover
 			text-decoration underline
 
-
+		// $Page footer navigation link MOD: selected
 		&_selected
 			color $c-page-footer_nav-link_selected_text
 			text-decoration none
