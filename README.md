@@ -10,14 +10,14 @@ Product mockup created with [http://frame.lab25.co.uk/](http://frame.lab25.co.uk
 ## Contents
 * [Folder structure](#folder-and-file-structure)
 * [Requirements](#requirements)
-	- [Editorconfig](#editorconfig)
+    - [Editorconfig](#editorconfig)
 * [Site configuration](#site-configuration)
 * [Tasks](#tasks)
-	- [Start](#start)
-	- [Dev](#dev)
-	- [Build](#build)
-	- [Rebuild](#rebuild)
-	- [Server](#server)
+    - [Start](#start)
+    - [Dev](#dev)
+    - [Build](#build)
+    - [Rebuild](#rebuild)
+    - [Server](#server)
 * [Live reload](#live-reload)
 * [License](#license)
 
@@ -29,10 +29,10 @@ Product mockup created with [http://frame.lab25.co.uk/](http://frame.lab25.co.uk
 |
 ├── grunt_tasks/                               * grunt tasks
 |   ├── config/                                * grunt tasks config
-│   |	├── paths.js
-│   |	├── settings.js
-│   |	└── aliases.js
-│   |
+|   |   ├── paths.js
+|   |   ├── settings.js
+|   |   └── aliases.js
+|   |
 |   └── task.js
 │
 ├── Gruntfile.js
@@ -42,52 +42,52 @@ Product mockup created with [http://frame.lab25.co.uk/](http://frame.lab25.co.uk
 |
 ├── dev/                                       * site source
 |   ├── coffee/                                * coffee scripts
-|	│
-│   ├── images/                                * image sources
-|	│
-│   ├── pug/                                   * templates
-|	|	├── blocks/                            * blocks library
-|	│   |   └── block.pug
-|	│   ├── helpers/                           * helper mixins
-|	│   ├── vendor/                            * third-party code
-|	│   ├── layouts/                           * page layouts
-|	│   └── pages/                             * main pages templates
-|	│
-│   ├── js/                                    * compiled and source js
-|	|   ├── vendor/                            * vendor scripts library
-|	|   ├── lib/                               * site scripts library
-|	│   ├── head.js                            * head scripts
-|	│   └── body.js                            * vendor scripts
-|	│
-|	├── stylus/                                * stylus preprocessor styles
-|	|	├── blocks/                            * blocks library
-|	│   |   └── block.styl
-|	│   ├── helpers/                           * mixins and vars
-|	│   ├── vendor/                            * third-party code
-|	│   ├── custom.styl
-|	│   ├── noscript.styl
-|	│   └── screen.styl
-|	│
-│   ├── helpers/                               * helper files
-|	|	├── favicon.ico
-|	|	└── .htaccess
-|	│
-│   ├── fonts/                                 * font sources
-|	│
-│   └── data/                                  * configs and data for templates
+|   │
+|   ├── images/                                * image sources
+|   │
+|   ├── pug/                                   * templates
+|   |   ├── blocks/                            * blocks library
+|   |   |   └── block.pug
+|   |   ├── helpers/                           * helper mixins
+|   |   ├── vendor/                            * third-party code
+|   |   ├── layouts/                           * page layouts
+|   |   └── pages/                             * main pages templates
+|   │
+|   ├── js/                                    * compiled and source js
+|   |   ├── vendor/                            * vendor scripts library
+|   |   ├── lib/                               * site scripts library
+|   |   ├── head.js                            * head scripts
+|   |   └── body.js                            * vendor scripts
+|   │
+|   ├── stylus/                                * stylus preprocessor styles
+|   |   ├── blocks/                            * blocks library
+|   |   |   └── block.styl
+|   |   ├── helpers/                           * mixins and vars
+|   |   ├── vendor/                            * third-party code
+|   |   ├── custom.styl
+|   |   ├── noscript.styl
+|   |   └── screen.styl
+|   │
+|   ├── helpers/                               * helper files
+|   |   ├── favicon.ico
+|   |   └── .htaccess
+|   │
+|   ├── fonts/                                 * font sources
+|   │
+|   └── data/                                  * configs and data for templates
 │
 └── build/                                     * built source
-	├── index.html
-	├── page.html
-	|
-	└── static/                                * static assets
-		├── css/                               * minified styles
-		|
-		├── images/                            * minified images
-		│
-		├── js/                                * minified assembled js
-		|
-		└── fonts/                             * @font-face-ready webfonts
+    ├── index.html
+    ├── page.html
+    |
+    └── static/                                * static assets
+        ├── css/                               * minified styles
+        |
+        ├── images/                            * minified images
+        │
+        ├── js/                                * minified assembled js
+        |
+        └── fonts/                             * @font-face-ready webfonts
 
 ```
 
