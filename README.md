@@ -1,6 +1,6 @@
 # Charity website template - ARCHIVED
 
-Nice fluid website template, designed by [cssauthor](http://www.cssauthor.com/free-charity-website-template-psd/) and coded by [Maxim Orlov](https://github.com/orlovmax). 
+Nice fluid website template, designed by [cssauthor](http://www.cssauthor.com/) and coded by [Maxim Orlov](https://github.com/orlovmax). 
 
 Demo: [http://website-templates.github.io/charity_responsive-template](http://website-templates.github.io/charity_responsive-template/)
 
@@ -10,14 +10,14 @@ Product mockup created with [http://frame.lab25.co.uk/](http://frame.lab25.co.uk
 ## Contents
 * [Folder structure](#folder-and-file-structure)
 * [Requirements](#requirements)
-    - [Editorconfig](#editorconfig)
+	- [Editorconfig](#editorconfig)
 * [Site configuration](#site-configuration)
 * [Tasks](#tasks)
-    - [Start](#start)
-    - [Dev](#dev)
-    - [Build](#build)
-    - [Rebuild](#rebuild)
-    - [Server](#server)
+	- [Start](#start)
+	- [Dev](#dev)
+	- [Build](#build)
+	- [Rebuild](#rebuild)
+	- [Server](#server)
 * [Live reload](#live-reload)
 * [License](#license)
 
@@ -77,17 +77,17 @@ Product mockup created with [http://frame.lab25.co.uk/](http://frame.lab25.co.uk
 |   └── data/                                  * configs and data for templates
 │
 └── build/                                     * built source
-    ├── index.html
-    ├── page.html
-    |
-    └── static/                                * static assets
-        ├── css/                               * minified styles
-        |
-        ├── images/                            * minified images
-        │
-        ├── js/                                * minified assembled js
-        |
-        └── fonts/                             * @font-face-ready webfonts
+	├── index.html
+	├── page.html
+	|
+	└── static/                                * static assets
+		├── css/                               * minified styles
+		|
+		├── images/                            * minified images
+		│
+		├── js/                                * minified assembled js
+		|
+		└── fonts/                             * @font-face-ready webfonts
 
 ```
 
