@@ -15,57 +15,57 @@ $c-promo_btn_text = #46a651
 $block = ".promo"
 
 {$block}
-	width 100%
-	min-height 600px
-	padding 225px 0 175px
-	background $c-promo_bg url("../images/bg/promo.jpg") 0 0 no-repeat fixed
-	text-align center
-	background-size cover
+  width 100%
+  min-height 600px
+  padding 225px 0 175px
+  background $c-promo_bg url("../images/bg/promo.jpg") 0 0 no-repeat fixed
+  text-align center
+  background-size cover
 
-	@media screen and ( max-width: 960px )
-		min-height 400px
-		padding 100px 0
-
-
-	// $Promo section inner container
-	&__inner
-		max-width 1024px
-		margin 0 auto
-		clearfix()
-
-		@media screen and ( max-width: 960px )
-			padding 0 10px
+  @media screen and ( max-width: 960px )
+    min-height 400px
+    padding 100px 0
 
 
-	// $Promo section title
-	&__title
-		text-transform uppercase
-		color $c-promo_title_text
-		text-shadow 1px 1px 3px rgba(0,0,0,.5)
+  // $Promo section inner container
+  &__inner
+    max-width 1024px
+    margin 0 auto
+    clearfix()
+
+    @media screen and ( max-width: 960px )
+      padding 0 10px
 
 
-	// $Promo section slogan
-	&__slogan
-		margin-top 15px
-		line-height 1.2
-		color $c-light
+  // $Promo section title
+  &__title
+    text-transform uppercase
+    color $c-promo_title_text
+    text-shadow 1px 1px 3px rgba(0,0,0,.5)
 
 
-	// $Promo section button
-	&__button
-		display block
-		width 270px
-		height 56px
-		margin 45px auto 0
-		color $c-promo_btn_text
-		font-size 26px
-		font-weight bold
-		line-height 56px
-		box-shadow 0 0 0 6px rgba(0,0,0,.1)
-		background linear-gradient(to bottom, #fff, #f0f0f0)
-		border-radius 28px
-		transition all .5s
+  // $Promo section slogan
+  &__slogan
+    margin-top 15px
+    line-height 1.2
+    color $c-light
 
-		&:hover
-			transform scale(1.1)
-			text-decoration none
+
+  // $Promo section button
+  &__button
+    display block
+    width 270px
+    height 56px
+    margin 45px auto 0
+    color $c-promo_btn_text
+    font-size 26px
+    font-weight bold
+    line-height 56px
+    box-shadow 0 0 0 6px rgba(0,0,0,.1)
+    background linear-gradient(to bottom, #fff, #f0f0f0)
+    border-radius 28px
+    transition all .5s
+
+    &:hover
+      transform scale(1.1)
+      text-decoration none

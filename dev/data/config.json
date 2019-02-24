@@ -1,23 +1,23 @@
 {
-	"site": {
-		"lang": "en",
-		"title": "Charity template",
-		"titleDelim": " | ",
-		"description": "Free charity website template",
-		"keywords": "html template, theme, freebie, opensource",
-		"url": "http://website-templates.github.io/charity_responsive-template"
-	},
-	"modules": {
-		"googleFonts": "https://fonts.googleapis.com/css?family=Roboto+Slab",
-		"bodyJs": false,
-		"headJs": false,
-		"customCss": true,
-		"noscriptCss": false,
-		"twitterCard": false,
-		"openGraph": false
-	},
-	"links": {
-		"twitterCardCreator": "===twittercard-creator-account===",
-		"twitterCardAccount": "===twittercard-main-account==="
-	}
+  "site": {
+    "lang": "en",
+    "title": "Charity template",
+    "titleDelim": " | ",
+    "description": "Free charity website template",
+    "keywords": "html template, theme, freebie, opensource",
+    "url": "http://website-templates.github.io/charity_responsive-template"
+  },
+  "modules": {
+    "googleFonts": "https://fonts.googleapis.com/css?family=Roboto+Slab",
+    "bodyJs": false,
+    "headJs": false,
+    "customCss": true,
+    "noscriptCss": false,
+    "twitterCard": false,
+    "openGraph": false
+  },
+  "links": {
+    "twitterCardCreator": "===twittercard-creator-account===",
+    "twitterCardAccount": "===twittercard-main-account==="
+  }
 }

@@ -21,105 +21,105 @@ $c-widget_submit_text = $c-light
 $block = ".widget"
 
 {$block}
-	float left
+  float left
 
 
-	// $Single widget MOD: social
-	&_social
-		text-align left
-		gs-column(2,7)
+  // $Single widget MOD: social
+  &_social
+    text-align left
+    gs-column(2,7)
 
-		@media screen and ( max-width: 640px )
-			gs-column(2,5)
-			padding 10px 0
+    @media screen and ( max-width: 640px )
+      gs-column(2,5)
+      padding 10px 0
 
-		@media screen and (max-width:  480px)
-			width 100%
-			float none
-			text-align center
-			clear both
-
-
-	/// $Single widget MOD: feed
-	&_feed
-		text-align left
-		gs-column(3,7)
-
-		@media screen and ( max-width: 640px )
-			gs-column(3,5)
-			padding 10px 0
-
-		@media screen and (max-width:  480px)
-			width 100%
-			float none
-			text-align center
-			clear both
-
-		& input[type=text]
-			height 40px
-			background-color $c-widget_input_bg
-			color $c-widget_input_text
-
-		& input[type=submit]
-			height 40px
-			background-color $c-widget_submit_bg
-			color $c-widget_submit_text
-
-			&:hover
-				background-color darken($c-accent, 10%)
+    @media screen and (max-width:  480px)
+      width 100%
+      float none
+      text-align center
+      clear both
 
 
-	// $Single widget MOD: contact
-	&_contact
-		text-align right
-		gs-column(2,7)
+  /// $Single widget MOD: feed
+  &_feed
+    text-align left
+    gs-column(3,7)
 
-		@media screen and ( max-width: 640px )
-			width 100%
-			float none
-			padding 10px 0
-			text-align center
-			clear both
+    @media screen and ( max-width: 640px )
+      gs-column(3,5)
+      padding 10px 0
 
+    @media screen and (max-width:  480px)
+      width 100%
+      float none
+      text-align center
+      clear both
 
-	// $Single widget icon
-	&__icon
-		display inline-block
-		width 40px
-		height 40px
-		margin 0 10px 0 0
-		background url("../images/soc-icon-sprite.png") no-repeat
-		font-size 0
-		overflow hidden
-		white-space nowrap
-		text-indent 999px
-		transition all .3s
+    & input[type=text]
+      height 40px
+      background-color $c-widget_input_bg
+      color $c-widget_input_text
 
-		&:hover
-			opacity .6
-			transform scale(1.1)
+    & input[type=submit]
+      height 40px
+      background-color $c-widget_submit_bg
+      color $c-widget_submit_text
 
-		// $Single widget icon MOD: facebook
-		&_fb
-			background-position 0 0
-
-		// $Single widget icon MOD: twitter
-		&_tw
-			background-position -41px 0
+      &:hover
+        background-color darken($c-accent, 10%)
 
 
-		// $Single widget icon MOD: google plus
-		&_gplus
-			background-position -82px 0
+  // $Single widget MOD: contact
+  &_contact
+    text-align right
+    gs-column(2,7)
+
+    @media screen and ( max-width: 640px )
+      width 100%
+      float none
+      padding 10px 0
+      text-align center
+      clear both
 
 
-	// $Single widget title
-	&__title
-		color $c-widget_title
-		margin 0 0 15px 0
+  // $Single widget icon
+  &__icon
+    display inline-block
+    width 40px
+    height 40px
+    margin 0 10px 0 0
+    background url("../images/soc-icon-sprite.png") no-repeat
+    font-size 0
+    overflow hidden
+    white-space nowrap
+    text-indent 999px
+    transition all .3s
+
+    &:hover
+      opacity .6
+      transform scale(1.1)
+
+    // $Single widget icon MOD: facebook
+    &_fb
+      background-position 0 0
+
+    // $Single widget icon MOD: twitter
+    &_tw
+      background-position -41px 0
 
 
-	// $Single widget text
-	&__text
-		color $c-widget_text
-		line-height 16px
+    // $Single widget icon MOD: google plus
+    &_gplus
+      background-position -82px 0
+
+
+  // $Single widget title
+  &__title
+    color $c-widget_title
+    margin 0 0 15px 0
+
+
+  // $Single widget text
+  &__text
+    color $c-widget_text
+    line-height 16px

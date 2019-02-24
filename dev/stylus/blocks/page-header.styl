@@ -17,61 +17,61 @@ $c-page-header_nav-link_selected_text = #9b242d
 $block = ".page-header"
 
 {$block}
-	width 100%
-	min-height 115px
-	padding 35px 0
-	background-color $c-page-header_bg
+  width 100%
+  min-height 115px
+  padding 35px 0
+  background-color $c-page-header_bg
 
 
-	// $Page header inner container
-	&__inner
-		max-width 1024px
-		margin 0 auto
-		clearfix()
+  // $Page header inner container
+  &__inner
+    max-width 1024px
+    margin 0 auto
+    clearfix()
 
-		@media screen and ( max-width: 960px )
-			padding 0 10px
-
-
-	// $Page header logo
-	&__logo
-		float left
-		width 212px
-		height 45px
-		color $c-page-header_logo_text
-
-		@media screen and ( max-width: 960px )
-			text-align center
-			margin 0 auto
-			float none
+    @media screen and ( max-width: 960px )
+      padding 0 10px
 
 
-	// $Page header navigation
-	&__nav
-		float right
-		text-align right
+  // $Page header logo
+  &__logo
+    float left
+    width 212px
+    height 45px
+    color $c-page-header_logo_text
 
-		@media screen and ( max-width: 960px )
-			margin 0 auto
-			text-align center
-			float none
+    @media screen and ( max-width: 960px )
+      text-align center
+      margin 0 auto
+      float none
 
 
-	// $Page header navigation link
-	&__nav-link
-		color $c-page-header_nav-link_text
-		text-transform uppercase
-		transition all .3s
+  // $Page header navigation
+  &__nav
+    float right
+    text-align right
 
-		&:hover
-			text-decoration underline
+    @media screen and ( max-width: 960px )
+      margin 0 auto
+      text-align center
+      float none
 
-		// $Page header navigation link MOD: selected
-		&_selected
-			color #fff
-			background-color $c-page-header_nav-link_selected_text
-			text-decoration none
-			cursor default
 
-			&:hover
-				text-decoration none
+  // $Page header navigation link
+  &__nav-link
+    color $c-page-header_nav-link_text
+    text-transform uppercase
+    transition all .3s
+
+    &:hover
+      text-decoration underline
+
+    // $Page header navigation link MOD: selected
+    &_selected
+      color #fff
+      background-color $c-page-header_nav-link_selected_text
+      text-decoration none
+      cursor default
+
+      &:hover
+        text-decoration none

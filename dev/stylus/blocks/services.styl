@@ -28,171 +28,171 @@ $c-services_icon_text = $c-light
 $block = ".services"
 
 {$block}
-	width 100%
-	clearfix()
+  width 100%
+  clearfix()
 
 
-	// $Services section title
-	&__title
-		font-size 40px
-		font-weight bold
-		color $c-services_title_text
-		text-shadow 1px 1px 3px rgba(0,0,0,.5)
+  // $Services section title
+  &__title
+    font-size 40px
+    font-weight bold
+    color $c-services_title_text
+    text-shadow 1px 1px 3px rgba(0,0,0,.5)
 
-		@media screen and ( max-width: 768px )
-			font-size 25px
-
-
-	// $Services section text
-	&__text
-		margin-top 10px
-		font-size 16px
-		line-height 22px
-		color $c-services_text
-
-		@media screen and ( max-width: 768px )
-			font-size 14px
-			line-height 20px
+    @media screen and ( max-width: 768px )
+      font-size 25px
 
 
-	// $Services section goals
-	&__goals
-		width 64%
-		height 320px
-		background-color $c-services_goals_bg
-		background-image url("../images/bg/info.jpg")
-		background-position right center
-		background-repeat no-repeat
-		background-size 36% 100%
-		float left
-		text-align right
-		padding 135px 0
+  // $Services section text
+  &__text
+    margin-top 10px
+    font-size 16px
+    line-height 22px
+    color $c-services_text
 
-		@media screen and ( max-width: 768px )
-			height 220px
-			background-image none
-			padding 80px 0
+    @media screen and ( max-width: 768px )
+      font-size 14px
+      line-height 20px
 
 
-	// $Services section logo
-	&__logo
-		display inline-block
-		width 280px
-		height 60px
-		margin-right 40%
+  // $Services section goals
+  &__goals
+    width 64%
+    height 320px
+    background-color $c-services_goals_bg
+    background-image url("../images/bg/info.jpg")
+    background-position right center
+    background-repeat no-repeat
+    background-size 36% 100%
+    float left
+    text-align right
+    padding 135px 0
 
-		@media screen and ( max-width: 768px )
-			width 210px
-			height 44px
-			margin-right 30px
-
-
-	// $Services section donate
-	&__donate
-		width 36%
-		height 320px
-		background-color $c-services_donate_bg
-		float right
-		padding 135px 0 0 40px
-
-		&:hover
-			background darken($c-services_donate_bg, 10%)
-
-		@media screen and ( max-width: 768px )
-			height 220px
-			padding 80px 0 0 30px
+    @media screen and ( max-width: 768px )
+      height 220px
+      background-image none
+      padding 80px 0
 
 
-	// $Services section news
-	&__news
-		width 64%
-		height 640px
-		padding 65px 80px 0 0
-		background-color $c-services_news_bg
-		background-image url("../images/bg/news.jpg")
-		background-position left bottom
-		background-repeat no-repeat
-		background-size 100% 50%
-		float left
+  // $Services section logo
+  &__logo
+    display inline-block
+    width 280px
+    height 60px
+    margin-right 40%
 
-		@media screen and ( max-width: 768px )
-			height 220px
-			padding 20px 30px 0 10px
-			background-image none
+    @media screen and ( max-width: 768px )
+      width 210px
+      height 44px
+      margin-right 30px
 
 
-	// $Services section subscribe
-	&__subscribe
-		max-width 540px
-		float right
-		text-align right
+  // $Services section donate
+  &__donate
+    width 36%
+    height 320px
+    background-color $c-services_donate_bg
+    float right
+    padding 135px 0 0 40px
 
-		& .subscribe-form
-			margin 20px 0 15px 0
+    &:hover
+      background darken($c-services_donate_bg, 10%)
 
-			@media screen and ( max-width: 768px )
-				margin 10px 0 0
-
-		& input[type=text]
-			height 45px
-			background-color $c-services_input_bg
-			color $c-services_input_text
-
-		& input[type=submit]
-			height 45px
-			background-color $c-services_submit_bg
-			color $c-services_submit_text
-
-			&:hover
-				background-color darken($c-services_submit_bg, 10%)
+    @media screen and ( max-width: 768px )
+      height 220px
+      padding 80px 0 0 30px
 
 
-	// $Services section social
-	&__soc
-		position relative
-		width 36%
-		height 640px
-		background-color $c-services_soc_bg
-		background-image url("../images/bg/like.jpg")
-		background-position center bottom
-		background-repeat no-repeat
-		-webkit-background-size 100% 50%
-		background-size cover
-		float right
+  // $Services section news
+  &__news
+    width 64%
+    height 640px
+    padding 65px 80px 0 0
+    background-color $c-services_news_bg
+    background-image url("../images/bg/news.jpg")
+    background-position left bottom
+    background-repeat no-repeat
+    background-size 100% 50%
+    float left
 
-		@media screen and ( max-width: 768px )
-			height 220px
-			background-image none
+    @media screen and ( max-width: 768px )
+      height 220px
+      padding 20px 30px 0 10px
+      background-image none
 
 
-	// $Services section icon
-	&__icon
-		display block
-		position absolute
-		bottom 0
-		width 72%
-		max-width 320px
-		height 320px
-		padding-top 120px
-		background-color $c-services_icon_bg
-		font-size 16px
-		line-height 22px
-		color $c-services_icon_text
-		text-align center
+  // $Services section subscribe
+  &__subscribe
+    max-width 540px
+    float right
+    text-align right
 
-		@media screen and ( max-width: 768px )
-			width 100%
-			max-width  100%
-			height 220px
-			padding-top 30px
+    & .subscribe-form
+      margin 20px 0 15px 0
 
-		&:hover
-			background darken($c-services_icon_bg, 10%)
+      @media screen and ( max-width: 768px )
+        margin 10px 0 0
 
-		&:before
-			content ""
-			display block
-			width 35px
-			height 74px
-			background url("../images/fb-logo.png") 0 0 no-repeat
-			margin 0 auto 30px
+    & input[type=text]
+      height 45px
+      background-color $c-services_input_bg
+      color $c-services_input_text
+
+    & input[type=submit]
+      height 45px
+      background-color $c-services_submit_bg
+      color $c-services_submit_text
+
+      &:hover
+        background-color darken($c-services_submit_bg, 10%)
+
+
+  // $Services section social
+  &__soc
+    position relative
+    width 36%
+    height 640px
+    background-color $c-services_soc_bg
+    background-image url("../images/bg/like.jpg")
+    background-position center bottom
+    background-repeat no-repeat
+    -webkit-background-size 100% 50%
+    background-size cover
+    float right
+
+    @media screen and ( max-width: 768px )
+      height 220px
+      background-image none
+
+
+  // $Services section icon
+  &__icon
+    display block
+    position absolute
+    bottom 0
+    width 72%
+    max-width 320px
+    height 320px
+    padding-top 120px
+    background-color $c-services_icon_bg
+    font-size 16px
+    line-height 22px
+    color $c-services_icon_text
+    text-align center
+
+    @media screen and ( max-width: 768px )
+      width 100%
+      max-width  100%
+      height 220px
+      padding-top 30px
+
+    &:hover
+      background darken($c-services_icon_bg, 10%)
+
+    &:before
+      content ""
+      display block
+      width 35px
+      height 74px
+      background url("../images/fb-logo.png") 0 0 no-repeat
+      margin 0 auto 30px
