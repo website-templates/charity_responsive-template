@@ -6,7 +6,9 @@ module.exports = {
       '<%= paths.dev.js %>/lib/*.js'
     ],
     tasks: [
-      'rollup:main'
+      // 'rollup:main',
+      // 'rigger:main',
+      // 'babel:main'
     ],
     options: {
       spawn: false
